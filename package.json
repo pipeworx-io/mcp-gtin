@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-gtin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Barcode / GTIN validation MCP (EAN-13, UPC-A, EAN-8, GTIN-14).",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-gtin": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "gtin"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-gtin"
+    "url": "git+https://github.com/pipeworx-io/mcp-gtin.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-42827539b0e4dfbe80fae76a847043b9689e01ca3ccb5d6aaa1d0fce3a1cb5c4",
+    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
   }
 }

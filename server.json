@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/gtin",
   "title": "Gtin",
   "description": "Barcode / GTIN validation MCP (EAN-13, UPC-A, EAN-8, GTIN-14).",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/gtin",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-gtin",
