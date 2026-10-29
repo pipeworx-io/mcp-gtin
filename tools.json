@@ -1,0 +1,34 @@
+[
+  {
+    "name": "validate_gtin",
+    "description": "Validate a barcode number — EAN-13, UPC-A (12), EAN-8, or GTIN-14 (keyless, offline). Checks the mod-10 check digit, reports the format, normalizes to GTIN-14, and returns the GS1 prefix + issuing country/region. Spaces/dashes ignored. Validates the number, not the product.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "A barcode/GTIN, e.g. \"0036000291452\" or \"4006381333931\"."
+        }
+      },
+      "required": [
+        "code"
+      ]
+    }
+  },
+  {
+    "name": "gtin_check_digit",
+    "description": "Compute the mod-10 check digit for GTIN/EAN/UPC data digits (all digits EXCEPT the check digit). Use to generate or repair a barcode.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "string",
+          "description": "The data digits without the check digit, e.g. \"400638133393\"."
+        }
+      },
+      "required": [
+        "data"
+      ]
+    }
+  }
+]
