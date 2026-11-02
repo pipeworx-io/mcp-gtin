@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-gtin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Barcode / GTIN validation MCP (EAN-13, UPC-A, EAN-8, GTIN-14).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "gtin",
     "gatewaySlug": "gtin",
-    "sourceHash": "v1-ea652984bb76d058173810f3fbf7ebaf5c363e05ab63af86810b142c28711f18",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-4467c80e63fb31c17c76c4ae05403f4cfa1bcd007de427f11a16b82a7615bf33",
+    "sourceCommit": "0ca9712c0ac03bb0121cc7e81b202d0c45ac02ca"
   }
 }
